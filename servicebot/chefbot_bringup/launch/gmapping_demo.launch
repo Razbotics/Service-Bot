@@ -1,0 +1,9 @@
+<launch>
+  <!-- https://github.com/ros-planning/navigation/issues/206 -->
+
+  <include file="$(find chefbot_bringup)/launch/includes/gmapping.launch.xml"/>
+  <include file="$(find chefbot_bringup)/launch/includes/move_base.launch.xml"/>
+  <!--include file="$(find chefbot_bringup)/launch/includes/velocity_smoother.launch.xml"/-->
+  <!--include file="$(find chefbot_bringup)/launch/includes/cmd_vel_mux.launch.xml"/-->
+
+</launch>

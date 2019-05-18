@@ -1,0 +1,9 @@
+ <launch>
+  <node name="virtual_joystick" pkg="chefbot_bringup" type="virtual_joystick.py">
+    <remap from="twist" to="cmd_vel" />
+    <rosparam param="x_min">-0.4</rosparam>
+    <rosparam param="x_max">0.4</rosparam>
+    <rosparam param="r_min">-2.0</rosparam>
+    <rosparam param="r_max">2.0</rosparam>
+    </node>
+</launch>

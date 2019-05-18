@@ -1,0 +1,7 @@
+<!--
+  Used for visualising the arlobot while building a map or navigating with the ros navistack.
+ -->
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find chefbot_bringup)/rviz/navigation.rviz"/>
+  <include file="$(find chefbot_bringup)/launch/joy_teleop.launch" />
+</launch>

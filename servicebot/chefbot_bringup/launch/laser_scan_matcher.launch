@@ -1,0 +1,15 @@
+<launch>
+
+  #### start the laser scan_matcher ##############################
+ <!--arg name="map_file" default="$(find chefbot_bringup)/map/apartment.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" /-->
+  <node pkg="laser_scan_matcher" type="laser_scan_matcher_node" 
+    name="laser_scan_matcher_node" output="screen">
+    <param name="fixed_frame" value="world"/>
+    <param name="base_frame" value="base_footprint"/>
+    <param name="max_iterations" value="10"/>
+    <param name="use_imu" value="true"/>
+    <param name="publish_pose_stamped" value="true"/>
+    
+  </node>
+</launch>
